@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/gehirudm/wpmelectron#readme",
   "devDependencies": {
-    "electron": "^19.0.6"
+    "electron": "^19.0.6",
+    "electron-reloader": "^1.2.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1"
   }
 }
