@@ -1,14 +1,15 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
 
-try {
+/*try {
     require('electron-reloader')(module)
-  } catch (_) {}
+  } catch (_) {}*/
 
 const loadMainWindow = () => {
     const mainWindow = new BrowserWindow({
-        width: 1200,
-        height: 800,
+        width: 700,
+        height: 1000,
+        resizable: false,
         //autoHideMenuBar: true,
         webPreferences: {
             nodeIntegration: true

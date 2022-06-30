@@ -6,36 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>How Fast can you type?</title>
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;1,300&display=swap');
-
-        body {
-            font-family: 'Raleway', sans-serif;
-        }
-
-        .box-item {
-            border-radius: 20px;
-            border-color: aquamarine;
-            margin: 200px;
-        }
-
-        .top-div {
-            display: flex;
-        }
-    </style>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
-    <div class="row top-div">
-        <div class="col-xs-12 col-md-3 box-item">.col-xs-12 .col-md-3</div>
-        <div class="col-xs-12 col-md-3 box-item">.col-xs-12 .col-md-3</div>
-        <div class="col-xs-12 col-md-3 box-item">.col-xs-12 .col-md-3</div>
-        <div class="col-xs-12 col-md-3 box-item">.col-xs-12 .col-md-3</div>
+    <div class="start-screen" id="start-page">
+        <h4>Test your typing speed</h4>
+        <div class="button-start">
+            START!
+        </div>
+    </div>
+    <div class="main-screen" id="main-page">
+        <h2>Type the following words as fast as possible.</h1>
+        <div class="essay-box">
+            <span class="word-item word-item-highlighted">Hi</span>
+            <span class="word-item">Hi</span>
+            <span class="word-item">Hi</span>
+            <span class="word-item">Hi</span>
+            <span class="word-item">Hi</span>
+            <span class="word-item">Hi</span>
+            <span class="word-item">Hi</span>
+            <span class="word-item">Hi</span>
+        </div>
+        <div class="word-now-box">
+            <span class="word-now" id="word-now">Type</span>
+        </div>
+        <div class="text-field">
+            <input type="text" class="input-text" id="textfield1">
+        </div>
+        <div class="info-box">
+            <p class="info-text">Word Per Minute (/min) : <span class="info-text-hightlight" id="wpm-text">45</span>
+            Accuracy : <span class="info-text-hightlight" id="accuracy-text">45.55%</span></p>
+        </div>
     </div>
     <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
 
